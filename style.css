@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 200px 800px ;
+    grid-template-rows: 50px minmax(100, auto) ;
+   
+grid-gap: 5px;
+justify-content: center;
+align-content: center;
+height: 100vh;
+
+
+   
+}
+.block{
+padding: 10px;
+border: 1px solid black;
+}
+.b0{
+   grid-column-start: 1;
+   grid-column-end: 3;
+ 
+}
+.b1{
+    grid-row-start: 2;
+   align-self: start;   
+}
